@@ -1,0 +1,578 @@
+/* src/style.css */
+
+/* --- 1. GLOBAL RESETS --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Light gray background for the whole app */
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* src/style.css */
+
+/* UPDATE this specific part to force footer to bottom */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-wrapper {
+    flex: 1; /* This pushes the footer down */
+}
+
+/* --- 6. FOOTER STYLES --- */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 50px;
+    text-align: center;
+    margin-top: auto; /* Key rule for sticky footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #7f8c8d;
+    width: 100%;
+    border-top: 1px solid #34495e;
+    padding-top: 20px;
+}
+
+/* --- 2. NAVBAR (Used in Landing Page) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #4A90E2; /* Brand Blue */
+}
+
+.nav-links a {
+    margin-left: 25px;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4A90E2;
+}
+
+.btn-primary-outline {
+    border: 2px solid #4A90E2;
+    padding: 8px 20px;
+    border-radius: 25px;
+    color: #4A90E2 !important;
+}
+
+.btn-primary-outline:hover {
+    background-color: #4A90E2;
+    color: white !important;
+}
+
+/* --- 3. LANDING PAGE SECTIONS --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 50px;
+    background-color: white;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.hero-btn {
+    padding: 15px 35px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+}
+
+.courses-section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.course-grid {
+    display: grid;
+    /* This creates columns that are at least 300px wide */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    
+    /* Ensures the grid is centered on the page */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    
+    /* FIX: Stop the card from becoming super wide */
+    max-width: 380px; 
+    width: 100%;
+    
+    /* Center the card if the grid column is wider than the card */
+    margin: 0 auto; 
+    
+    display: flex;
+    flex-direction: column; /* Helps push the footer to the bottom */
+}
+
+.course-info {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* This makes all cards same height */
+}
+
+/* Fix image aspect ratio */
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures image is not squished */
+}
+
+/* --- 4. AUTH FORMS (Login & Signup) --- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eef2f3;
+}
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.auth-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #666;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4A90E2;
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-auth:hover {
+    background-color: #357abd;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.auth-footer a {
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+/* --- 5. DASHBOARD LAYOUT --- */
+/* src/style.css */
+
+/* Fix the Container to take full width */
+.dashboard-container {
+    display: flex;
+    width: 100%; /* Ensures it fills the screen */
+    min-height: calc(100vh - 80px); /* Full height minus Navbar */
+    background-color: #f4f7f6;
+}
+
+/* Fix the Sidebar to align with the Navbar Logo */
+.sidebar {
+    width: 300px; /* Slightly wider for better spacing */
+    background-color: white;
+    
+    
+    padding: 40px 30px 30px 50px; 
+    
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; /* Prevents sidebar from shrinking on small screens */
+}
+
+.profile-img-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #4A90E2;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sidebar-info {
+    margin-top: 20px;
+}
+.sidebar-info p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.sidebar-info strong {
+    color: #333;
+    display: block; /* Puts the value on a new line */
+}
+
+/* Right Main Panel */
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Search & Filter Bar */
+.dashboard-header {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.search-input {
+    flex: 1; /* Takes remaining space */
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filter-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+}
+
+/* Course List Items */
+.enrolled-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    align-items: center;
+}
+
+.enrolled-card img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.enrolled-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #eee;
+    height: 8px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #27ae60;
+    border-radius: 4px;
+}
+
+/* --- 7. COURSE DETAIL PAGE --- */
+.course-detail-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 50px;
+}
+
+.course-detail-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.detail-content {
+    flex: 2; /* Takes up 66% */
+}
+
+.detail-sidebar {
+    flex: 1; /* Takes up 33% */
+    position: sticky;
+    top: 100px; /* Sticks when scrolling */
+    height: fit-content;
+}
+
+.buy-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.buy-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.video-list-item {
+    background: white;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.locked-icon {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* --- 8. LEARNING PAGE (LMS) --- */
+.learning-container {
+    display: flex;
+    height: calc(100vh - 70px); /* Full height minus navbar */
+    background-color: #1a1a1a; /* Dark background */
+    color: white;
+    overflow: hidden;
+}
+
+/* Left: Video Player */
+.learning-main {
+    flex: 3; /* 75% width */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.video-wrapper {
+    background: black;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+
+.lesson-controls {
+    padding: 20px;
+    background: #222;
+    border-bottom: 1px solid #333;
+}
+
+/* Right: Playlist Sidebar */
+.learning-sidebar {
+    flex: 1; /* 25% width */
+    background-color: #2c3e50;
+    border-left: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.module-item {
+    padding: 15px;
+    border-bottom: 1px solid #34495e;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-item:hover {
+    background-color: #34495e;
+}
+
+.module-item.active {
+    background-color: #4A90E2;
+    color: white;
+}
+
+/* Dropdowns for Quiz/Resources */
+.resource-panel {
+    background: #333;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.quiz-panel {
+    background: #f4f7f6;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* --- 9. MODAL (POPUP) STYLES --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
