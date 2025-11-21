@@ -1,0 +1,89 @@
+/* src/Auth.css */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Subtle background */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.auth-form-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-form-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  /* Box-sizing ensures padding doesn't make input wider than container */
+  box-sizing: border-box; 
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4A90E2;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #4A90E2; /* Matches your Landing Page blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+}
+
+.auth-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-footer a {
+  color: #4A90E2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-home {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+}
