@@ -324,3 +324,4 @@ app.post('/user/upload-pic', upload.single('profilePic'), async (req, res) => {
 });
 
 app.listen(3001, () => { console.log("Server running on 3001"); });
+// [2025-11-25] style: polish typography hierarchy and mobile drawer navigation
