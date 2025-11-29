@@ -337,3 +337,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-11-27] feat(footer): add platform footer with support links and social icons
 
 // [2025-11-28] chore: polish UI transitions and prepare initial release candidate
+
+// [2025-11-29] feat(analytics): draft basic student engagement metrics view
