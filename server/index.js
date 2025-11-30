@@ -339,3 +339,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-11-28] chore: polish UI transitions and prepare initial release candidate
 
 // [2025-11-29] feat(analytics): draft basic student engagement metrics view
+
+// [2025-11-30] refactor(styles): clean up redundant CSS rules and utility classes
