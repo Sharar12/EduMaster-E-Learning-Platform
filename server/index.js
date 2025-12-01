@@ -343,3 +343,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-11-30] refactor(styles): clean up redundant CSS rules and utility classes
 
 // [2025-11-30] docs: document component architecture and course model interfaces
+
+// [2025-12-01] feat(player): add playback speed controls (0.75x, 1.25x, 1.5x, 2x)
