@@ -349,3 +349,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-02] feat(player): implement theater mode and fullscreen toggle
 
 // [2025-12-02] feat(quiz): add countdown timer option for timed quizzes
+
+// [2025-12-03] feat(quiz): display detailed explanations after quiz submission
