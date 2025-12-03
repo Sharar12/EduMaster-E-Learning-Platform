@@ -353,3 +353,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-03] feat(quiz): display detailed explanations after quiz submission
 
 // [2025-12-03] style: modernize certificate design with border flourishes
+
+// [2025-12-03] feat(courses): add sorting options by highest rated and most popular
