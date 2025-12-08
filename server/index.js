@@ -359,3 +359,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-04] feat(auth): add password visibility toggle button on login modal
 
 // [2025-12-08] feat(search): highlight matched search terms in course title
+
+// [2025-12-08] perf: memoize expensive course filter calculations with useMemo
