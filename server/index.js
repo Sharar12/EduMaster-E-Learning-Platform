@@ -361,3 +361,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-08] feat(search): highlight matched search terms in course title
 
 // [2025-12-08] perf: memoize expensive course filter calculations with useMemo
+
+// [2025-12-11] feat(discussion): support upvoting and sorting questions by popularity
