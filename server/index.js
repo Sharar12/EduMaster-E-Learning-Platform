@@ -365,3 +365,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-11] feat(discussion): support upvoting and sorting questions by popularity
 
 // [2025-12-12] feat(notes): support exporting lesson notes as markdown file
+
+// [2025-12-13] Update README.md
