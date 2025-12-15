@@ -373,3 +373,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-14] feat(notifications): add mark all as read button to notifications dropdown
 
 // [2025-12-14] feat(instructor): add revenue summary and student enrollment count stats
+
+// [2025-12-15] style: refine active tab underline indicator with smooth transition
