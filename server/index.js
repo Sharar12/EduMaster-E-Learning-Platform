@@ -381,3 +381,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-16] refactor(components): standardize icon sizes and color tokens
 
 // [2025-12-17] feat(profile): display visual badges for completed courses
+
+// [2025-12-19] feat(player): automatically save and resume video playback position
