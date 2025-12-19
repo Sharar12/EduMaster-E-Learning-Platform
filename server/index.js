@@ -385,3 +385,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-19] feat(player): automatically save and resume video playback position
 
 // [2025-12-19] feat(bookmarks): add quick unfavorite button from student dashboard
+
+// [2025-12-19] perf: optimize dynamic route bundle splitting with lazy loading
