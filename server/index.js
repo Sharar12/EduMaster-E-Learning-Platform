@@ -393,3 +393,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-21] style: polish mobile dropdown menus and touch target padding
 
 // [2025-12-21] feat(accessibility): add aria-labels and keyboard focus indicators
+
+// [2025-12-24] refactor(types): strengthen TypeScript types for lesson attachments
