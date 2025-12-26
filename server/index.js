@@ -399,3 +399,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-24] docs: document video player shortcut controls and configuration
 
 // [2025-12-25] test: verify quiz score calculation across multiple question types
+
+// [2025-12-26] feat(offline): show friendly reconnect banner when network drops
