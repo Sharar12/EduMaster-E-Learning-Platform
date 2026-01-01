@@ -403,3 +403,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2025-12-26] feat(offline): show friendly reconnect banner when network drops
 
 // [2025-12-30] chore: update build script and dependencies for end-of-year maintenance
+
+// [2026-01-01] chore(deps): update npm packages for Q1 2026 dependencies
