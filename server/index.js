@@ -407,3 +407,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2026-01-01] chore(deps): update npm packages for Q1 2026 dependencies
 
 // [2026-01-08] feat(search): add instant autocomplete suggestions in search input
+
+// [2026-01-08] feat(player): add picture-in-picture mode support for video lessons
