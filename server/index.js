@@ -409,3 +409,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2026-01-08] feat(search): add instant autocomplete suggestions in search input
 
 // [2026-01-08] feat(player): add picture-in-picture mode support for video lessons
+
+// [2026-01-11] style: refine course enrollment button gradient and press states
