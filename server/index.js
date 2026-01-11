@@ -411,3 +411,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2026-01-08] feat(player): add picture-in-picture mode support for video lessons
 
 // [2026-01-11] style: refine course enrollment button gradient and press states
+
+// [2026-01-11] feat(analytics): add course completion rate metric chart
