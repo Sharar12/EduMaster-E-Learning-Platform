@@ -419,3 +419,5 @@ app.listen(3001, () => { console.log("Server running on 3001"); });
 // [2026-01-12] refactor(quiz): clean up quiz answer validation state handling
 
 // [2026-01-14] perf: preload next lesson video metadata to reduce buffering delay
+
+// [2026-01-14] feat(notifications): add toggle for email notification preferences
